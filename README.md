@@ -6,10 +6,17 @@
 - `<Host>.pfx` (PKCS#12，使用者指定密碼加密)
 
 簡單操作產生公共機構簽署的憑證與DDNS，方便練習以HTTPS網站部署與網路驗證。
+
 dynu免費註冊並使用DDNS，個人體驗相比DuckDNS穩定性更高！
-請先在https://www.dynu.com註冊帳號，並在API Credentials複製API Key。
+
+請先在 `https://www.dynu.com` 註冊帳號，並在API Credentials複製API Key。
+
+執行 fetch.py 下載相依套件，避免使用者python環境沒有相依套件而無法執行。
+
+然後再執行 main.py ，會以GUI介面呈現，並會把設定記錄，更方便使用者日後操作與再次更新。
 
 ## 功能特色
+
 1. 介面化設定
    - 輸入 IP、Host、Base Domain (例如 `myhost.ddnsfree.com`)、Dynu API Key、Email 與 PFX 密碼。
 2. 連動 Dynu v2 API
@@ -24,6 +31,7 @@ dynu免費註冊並使用DDNS，個人體驗相比DuckDNS穩定性更高！
    - `<Host>.pfx`：PKCS#12 格式，內含私鑰與完整鏈，並以使用者輸入的密碼加密
 
 ## 安裝與執行
+
 1. **下載或 clone 本專案** 
    ```bash
    git clone https://github.com/YourName/DynuCertUpdater.git
