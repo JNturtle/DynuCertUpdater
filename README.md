@@ -54,3 +54,6 @@ dynu免費註冊並使用DDNS，個人體驗相比DuckDNS穩定性更高！
    	2.	進行 ACME DNS-01 驗證，於 Dynu 新增 _acme-challenge.<domain> TXT。
    	3.	驗證成功後，輸出 <Host>.key, <Host>.crt, <Host>.pfx 三份檔案。
    	4.	刪除 TXT 紀錄。
+
+## 注意事項
+- Dynu每帳號可以註冊4組，如果新建立時出現503錯誤，需上dynu檢查是否額度已滿。
